@@ -1,0 +1,193 @@
+:root{
+  --text-color: #1a1c20;
+  --link-color: #4a76ee;
+  --background-color: #eeeff1;
+}
+*{
+  padding: 0;
+  margin: 0;
+  /* font-family: sans-serif; */
+  box-sizing: border-box;
+}
+html{
+scroll-behavior: smooth;
+  
+}
+body{
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+  background-color: var(--background-color);
+}
+a{
+  color: var(--link-color);
+  text-decoration: none;
+}
+nav{
+ display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  height: 80px;
+}
+nav .left a{
+  color: var(--text-color);
+  font-size: 22px;
+  font-weight: 400px;
+}
+nav .right a{
+  color: var(--text-color);
+  margin:  0 20px;
+}
+nav .right a span{
+  margin-left: 5px;
+}
+.heroSection{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 50px;
+  margin: 50px 0;
+  margin-bottom: 100px;
+  gap: 40px;
+}
+.heroSection .text{
+  flex: 5;
+}
+.heroSection .text h2{
+  font-size: 45px;
+}
+.heroSection.text .link{
+  margin-top: 25px;
+}
+.heroSection .text .link a{
+  display: inline-block;
+  padding: 5px 10px;
+  border: 2px solid var(--link-color);
+  border-radius: 5px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  transition: 0.1s;
+}
+.heroSection .text .link a:hover{
+color: var(--text-color);
+border: 0px solid var(--text-color);
+}
+.heroSection .image{
+  flex: 2;
+  display: flex;
+  justify-content: right;
+}
+.heroSection .image img{
+  width: 350px;
+  border-radius: 50%;
+}
+.skills-section{
+  padding: 0 50px;
+  margin-bottom: 100px;
+}
+.skills-section h2{
+  text-align: center;
+  font-size: 35px;
+}
+.skills-section .text{
+  text-align: center;
+  font-size: 20px;
+}
+.skills-section .cells{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.skills-section .cells .cell{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  padding: 10px 20px;
+  gap: 10px;
+  margin: 10px;
+  border: 2px solid #d3d3d3;
+  border-radius: 5px;
+}
+.skills-section .cells .cell img{
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+  border-radius: 2px;
+}
+.skills-section .cells .cell span{
+  font-size: 20px;
+}
+.testimony-section{
+  padding:  0 50px;
+  margin-bottom: 100px;
+}
+.testimony-section h2{
+  font-size: 35px;
+  margin-bottom: 30px;
+}
+.testimony-section .group{
+  display: flex;
+  justify-content: center;
+ align-items: center;
+ gap: 50px;
+}
+.testimony-section .group .personal-details{
+  text-align: center;
+}
+.testimony-section .group .personal-details img{
+  border-radius: 50%;
+}
+.contact-section{
+  padding: 0 50px;
+  margin-bottom: 100px;
+}
+.contact-section h2{
+  font-size: 35px;
+}
+.contact-section .group{
+  display: flex;
+  gap: 50px;
+}
+.contact-section .group .text{
+  flex: 3;
+  margin-top: 20px;
+}
+.contact-section .group form{
+flex: 3;
+display: flex;
+flex-direction: column;
+}
+.contact-section .group form input,
+.contact-section .group form textarea{
+  font-family: 'Poppins', sans-serif;
+  border: 2px solid var(--link-color);
+  padding: 10px;
+  margin-bottom: 15px;
+  resize: none;
+}
+.contact-section .group form button{
+  font-size: 16px;
+  font-family: 'Poppins', sans-serif;
+  color: #fff;
+  background-color: var(--link-color);
+  border: none;
+  height: 50px;
+  cursor: pointer;
+  transition: 0.1s;
+}
+.contact-section .group form button:hover {
+  filter: brightness(0.9);
+}
+
+@media (max-width: 850px) {
+.heroSection .text h2{
+  font-size: 35px;
+}
+}
+@media (max-width: 7400px) {
+ nav{
+  padding: 0 20px;
+ }
+}
+
